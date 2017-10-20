@@ -157,4 +157,4 @@ Here's a [link to my video result](./project_video_out.mp4)
 There are minor problems when no suitable curve was found - interpolating could be improved.
 Filtering dark and very bright areas could be improved as well.
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+
