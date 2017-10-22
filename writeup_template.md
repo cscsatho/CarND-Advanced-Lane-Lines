@@ -37,6 +37,11 @@ The goals / steps of this project are the following:
 [image_d2]: ./examples/result2.png "Result 2"
 [image_d3]: ./examples/result3.png "Result 3"
 
+[image_e1]: ./camera_cal/calibration1_chess_r.jpg
+[image_e2]: ./camera_cal/calibration1_chess_undist_r.jpg
+[image_e3]: ./camera_cal/calibration2_chess_r.jpg
+[image_e4]: ./camera_cal/calibration2_chess_undist_r.jpg
+
 [video1]: ./project_video_out.mp4 "Result Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -70,6 +75,17 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like the ones in the previous paragraph.
+
+*Example 1*
+
+![alt text][image_e1]
+![alt text][image_e2]
+
+*Example 2*
+
+![alt text][image_e3]
+![alt text][image_e4]
+
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
@@ -154,7 +170,8 @@ Here's a [link to my video result](./project_video_out.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-There are minor problems when no suitable curve was found - interpolating could be improved.
-Filtering dark and very bright areas could be improved as well.
+Proper interpolation is now in palce, I've addressed that issue.
 
+Other problems that would make my implementation fail can be up- and downhill driving (area of interes changes significantly), missing or substantially worn out lane markings (no good refernce for lane borders), altered lighting conditions (e.g. fog oder dusk), changing lanes (my pipeline is not prepared for that).
 
+You might want to write about hypothetical cases which would cause the pipeline to fail. E.g. think of a video made at night or a road segment with significant slope on it. Would the pipeline work in such situations? Why?
