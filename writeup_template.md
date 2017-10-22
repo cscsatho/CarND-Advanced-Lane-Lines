@@ -174,4 +174,3 @@ Proper interpolation is now in palce, I've addressed that issue.
 
 Other problems that would make my implementation fail can be up- and downhill driving (area of interes changes significantly), missing or substantially worn out lane markings (no good refernce for lane borders), altered lighting conditions (e.g. fog oder dusk), changing lanes (my pipeline is not prepared for that).
 
-You might want to write about hypothetical cases which would cause the pipeline to fail. E.g. think of a video made at night or a road segment with significant slope on it. Would the pipeline work in such situations? Why?
